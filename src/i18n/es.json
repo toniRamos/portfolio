@@ -116,6 +116,11 @@
       "title": "Gestión de Videoclub",
       "description": "Sistema moderno de gestión de videoclub con auditoría integral de usuarios, catálogo de películas y operaciones CRUD completas. Construido con principios de Domain-Driven Design (DDD) y sistema completo de auditoría para cumplimiento normativo y seguimiento de cambios.",
       "tech": ["Node.js", "React", "TypeScript", "MongoDB", "Redis", "Docker", "Express", "DDD"]
+    },
+    "planningPoker": {
+      "title": "Planning Poker",
+      "description": "Aplicación colaborativa en tiempo real para Planning Poker con gestión completa de sesiones, votación con cartas Fibonacci, métricas de votación, control basado en roles (Admin/Player/Viewer) y comunicación WebSocket. Implementa arquitectura limpia con patrón Repository y persistencia MongoDB.",
+      "tech": ["React", "Node.js", "TypeScript", "Socket.IO", "MongoDB", "Express", "Docker"]
     }
   },
   "contact": {

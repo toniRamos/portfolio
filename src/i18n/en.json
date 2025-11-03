@@ -116,6 +116,11 @@
       "title": "Video Store Management",
       "description": "Modern video club management system with comprehensive user auditing, film catalog features, and complete CRUD operations. Built with Domain-Driven Design (DDD) principles and featuring a complete audit trail system for compliance and tracking.",
       "tech": ["Node.js", "React", "TypeScript", "MongoDB", "Redis", "Docker", "Express", "DDD"]
+    },
+    "planningPoker": {
+      "title": "Planning Poker",
+      "description": "Real-time collaborative Planning Poker application with complete session management, Fibonacci card voting, voting metrics, role-based control (Admin/Player/Viewer), and WebSocket communication. Implements clean architecture with Repository pattern and MongoDB persistence.",
+      "tech": ["React", "Node.js", "TypeScript", "Socket.IO", "MongoDB", "Express", "Docker"]
     }
   },
   "contact": {

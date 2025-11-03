@@ -6,6 +6,7 @@ const t = useTranslations(lang);
 
 const portfolioScreenshot = "/portfolio/images/projects/portfolio-screenshot.png";
 const videoStoreScreenshot = "/portfolio/images/projects/video-store-screenshot.png";
+const planningPokerScreenshot = "/portfolio/images/projects/planning-poker.png";
 ---
 
 <section id="projects" class="projects">
@@ -17,6 +18,32 @@ const videoStoreScreenshot = "/portfolio/images/projects/video-store-screenshot.
 			</h2>
 		</div>
 		<div class="projects-grid">
+
+			<div class="project-card reveal-stagger">
+				<a href="https://github.com/toniRamos/planning-poker" target="_blank" rel="noopener noreferrer" class="project-image">
+					<img 
+						src={planningPokerScreenshot} 
+						alt={t('projects.planningPoker.title')}
+					/>
+				</a>
+				<div class="project-content">
+					<p class="project-overline">{t('projects.personal')}</p>
+					<h3 class="project-title">
+						<a href="https://github.com/toniRamos/planning-poker" target="_blank" rel="noopener noreferrer">
+							{t('projects.planningPoker.title')}
+						</a>
+					</h3>
+					<div class="project-description">
+						<p>{t('projects.planningPoker.description')}</p>
+					</div>
+					<div class="project-technologies">
+						{t('projects.planningPoker.tech').map((tech, index) => (
+							<span class="tech-tag" key={index}>{tech}</span>
+						))}
+					</div>
+				</div>
+			</div>
+
 			<div class="project-card reveal-stagger">
 				<a href="https://github.com/toniRamos/portfolio" target="_blank" rel="noopener noreferrer" class="project-image">
 					<img 
