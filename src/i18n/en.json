@@ -121,6 +121,11 @@
       "title": "Planning Poker",
       "description": "Real-time collaborative Planning Poker application with complete session management, Fibonacci card voting, voting metrics, role-based control (Admin/Player/Viewer), and WebSocket communication. Implements clean architecture with Repository pattern and MongoDB persistence.",
       "tech": ["React", "Node.js", "TypeScript", "Socket.IO", "MongoDB", "Express", "Docker"]
+    },
+    "chess": {
+      "title": "Chess",
+      "description": "Chess game featuring single-player mode against AI and real-time multiplayer. Play against an AI with 4 difficulty levels or challenge other players online via WebSockets. Includes interactive board, move history, check/checkmate/stalemate detection, FEN system for importing/exporting games, spectator mode, and persistent storage in MongoDB. Built with clean architecture using React, Node.js, and Docker.",
+      "tech": ["React", "Node.js", "TypeScript", "Socket.IO", "MongoDB", "Express", "Docker", "Chess.js", "js-chess-engine", "React Chessboard", "CSS3"]
     }
   },
   "contact": {

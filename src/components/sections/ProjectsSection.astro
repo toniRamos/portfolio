@@ -7,6 +7,7 @@ const t = useTranslations(lang);
 const portfolioScreenshot = "/portfolio/images/projects/portfolio-screenshot.png";
 const videoStoreScreenshot = "/portfolio/images/projects/video-store-screenshot.png";
 const planningPokerScreenshot = "/portfolio/images/projects/planning-poker.png";
+const chessScreenshot = "/portfolio/images/projects/chess.png"; // Placeholder
 ---
 
 <section id="projects" class="projects">
@@ -18,6 +19,31 @@ const planningPokerScreenshot = "/portfolio/images/projects/planning-poker.png";
 			</h2>
 		</div>
 		<div class="projects-grid">
+
+					<div class="project-card chess-layout reveal-stagger">
+						<a href="https://github.com/toniRamos/chess" target="_blank" rel="noopener noreferrer" class="project-image">
+							<img 
+								src={chessScreenshot} 
+								alt={t('projects.chess.title')}
+							/>
+						</a>
+						<div class="project-content">
+							<p class="project-overline">{t('projects.personal')}</p>
+							<h3 class="project-title">
+								<a href="https://github.com/toniRamos/chess" target="_blank" rel="noopener noreferrer">
+									{t('projects.chess.title')}
+								</a>
+							</h3>
+							<div class="project-description">
+								<p>{t('projects.chess.description')}</p>
+							</div>
+							<div class="project-technologies">
+								{t('projects.chess.tech').map((tech, index) => (
+									<span class="tech-tag" key={index}>{tech}</span>
+								))}
+							</div>
+						</div>
+					</div>
 
 			<div class="project-card reveal-stagger">
 				<a href="https://github.com/toniRamos/planning-poker" target="_blank" rel="noopener noreferrer" class="project-image">
