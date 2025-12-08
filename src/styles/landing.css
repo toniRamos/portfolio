@@ -706,6 +706,36 @@ section {
 	justify-content: flex-end;
 }
 
+.project-links {
+	display: flex;
+	gap: 15px;
+	margin-top: 15px;
+	position: relative;
+	z-index: 2;
+}
+
+.project-link {
+	color: #ccd6f6;
+	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-link:hover {
+	color: #64ffda;
+	transform: translateY(-3px);
+}
+
+.project-link svg {
+	width: 22px;
+	height: 22px;
+}
+
+.project-card:nth-child(even) .project-links {
+	justify-content: flex-end;
+}
+
 /* Legacy support for existing project-tech */
 .project-tech {
 	display: flex;

@@ -126,6 +126,11 @@
       "title": "Chess",
       "description": "Chess game featuring single-player mode against AI and real-time multiplayer. Play against an AI with 4 difficulty levels or challenge other players online via WebSockets. Includes interactive board, move history, check/checkmate/stalemate detection, FEN system for importing/exporting games, spectator mode, and persistent storage in MongoDB. Built with clean architecture using React, Node.js, and Docker.",
       "tech": ["React", "Node.js", "TypeScript", "Socket.IO", "MongoDB", "Express", "Docker", "Chess.js", "js-chess-engine", "React Chessboard", "CSS3"]
+    },
+    "factorioLike": {
+      "title": "Factorio-like Game",
+      "description": "Factory-building game inspired by Factorio, built with Svelte and Vite. Complete resource production and transportation system featuring conveyor belts, automatic item generation, intelligent flow management with automatic balancing at junctions, maximum capacity of 3 items per cell, real-time visual feedback, and automatic saving. Tick-based simulation with smart pathfinding and pause/resume controls.",
+      "tech": ["Svelte", "JavaScript", "Vite", "CSS3", "GitHub Pages", "localStorage"]
     }
   },
   "contact": {

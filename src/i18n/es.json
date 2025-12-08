@@ -126,6 +126,11 @@
       "title": "Chess (Ajedrez)",
       "description": "Juego de ajedrez con modo individual contra IA y multijugador en tiempo real. Permite jugar contra una inteligencia artificial con 4 niveles de dificultad, o contra otros jugadores online mediante WebSockets. Incluye tablero interactivo, historial de movimientos, detección de jaque, mate y tablas, sistema FEN para importar/exportar partidas, modo espectador y almacenamiento persistente en MongoDB. Arquitectura limpia con React, Node.js y Docker.",
       "tech": ["React", "Node.js", "TypeScript", "Socket.IO", "MongoDB", "Express", "Docker", "Chess.js", "js-chess-engine", "React Chessboard", "CSS3"]
+    },
+    "factorioLike": {
+      "title": "Factorio-like Game",
+      "description": "Juego de construcción de fábricas inspirado en Factorio, construido con Svelte y Vite. Sistema completo de producción y transporte de recursos con cintas transportadoras, generación automática de ítems, gestión inteligente de flujo con balanceo automático en intersecciones, capacidad máxima de 3 ítems por celda, feedback visual en tiempo real y guardado automático. Simulación basada en ticks con pathfinding inteligente y controles de pausa/reanudación.",
+      "tech": ["Svelte", "JavaScript", "Vite", "CSS3", "GitHub Pages", "localStorage"]
     }
   },
   "contact": {
