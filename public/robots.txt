@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://antonioramostorres.dev/sitemap-index.xml

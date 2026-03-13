@@ -13,7 +13,7 @@ const currentPath = Astro.url.pathname;
 const canonicalURL = lang === 'en' 
 	? `${siteConfig.url}/en/` 
 	: `${siteConfig.url}/`;
-const ogImage = `${siteConfig.url}/og-default.png`;
+const ogImage = `${siteConfig.url}/images/profile/profile-picture.jpg`;
 ---
 
 <!doctype html>
@@ -62,7 +62,36 @@ const ogImage = `${siteConfig.url}/og-default.png`;
 			"@type": "Person",
 			"name": siteConfig.name,
 			"jobTitle": "Software Architect",
+			"description": siteConfig.description,
 			"url": siteConfig.url,
+			"image": `${siteConfig.url}/images/profile/profile-picture.jpg`,
+			"email": siteConfig.email,
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Barcelona",
+				"addressRegion": "Catalonia",
+				"addressCountry": "ES"
+			},
+			"worksFor": {
+				"@type": "Organization",
+				"name": "Vibia"
+			},
+			"knowsAbout": [
+				"Software Architecture",
+				"Domain-Driven Design",
+				"Hexagonal Architecture",
+				"Clean Architecture",
+				"Node.js",
+				"React",
+				"TypeScript",
+				"JavaScript",
+				"PHP",
+				"Symfony",
+				"Microservices",
+				"CQRS",
+				"Docker",
+				"CI/CD"
+			],
 			"sameAs": [
 				siteConfig.social.github,
 				siteConfig.social.linkedin

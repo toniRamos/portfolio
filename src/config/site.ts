@@ -3,7 +3,7 @@ export const siteConfig = {
   name: "Antonio Ramos",
   title: "Antonio Ramos — Arquitecto de Software (DDD, Hexagonal, Node, React)",
   description: "Arquitecto de Software con 10+ años diseñando sistemas escalables. DDD, Arquitectura Hexagonal, Node.js, React, CI/CD.",
-  url: "https://toniramos.github.io/portfolio",
+  url: "https://antonioramostorres.dev",
   email: "antonioramostorres@gmail.com",
   
   // Social links
