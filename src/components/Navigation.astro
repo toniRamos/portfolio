@@ -7,7 +7,7 @@ const t = useTranslations(lang);
 
 <nav class="navbar">
 	<div class="nav-header">
-		<a href={lang === 'en' ? '/portfolio/en/' : '/portfolio/'} class="logo">
+		<a href={lang === 'en' ? '/en/' : '/'} class="logo">
 			<span class="logo-text">AR</span>
 		</a>
 	</div>
@@ -382,32 +382,30 @@ const t = useTranslations(lang);
 		});
 	});
 
-	// Language selector functionality
+	// Language selector functionality (sin base '/portfolio')
 	const languageSelect = document.getElementById('languageSelect');
 
 	function handleLanguageChange(selectedLang) {
 		const currentPath = window.location.pathname;
-		const basePath = '/portfolio';
 		
 		if (selectedLang === 'en') {
 			// Navigate to English version
-			if (currentPath === basePath + '/' || currentPath === basePath) {
-				window.location.href = basePath + '/en/';
-			} else if (currentPath.startsWith(basePath + '/en')) {
+			if (currentPath === '/' || currentPath === '') {
+				window.location.href = '/en/';
+			} else if (currentPath.startsWith('/en')) {
 				// Already in English, do nothing
 				return;
 			} else {
-				// Remove base path, add /en, then add base path back
-				const pathWithoutBase = currentPath.replace(basePath, '');
-				window.location.href = basePath + '/en' + (pathWithoutBase || '/');
+				// Add /en prefix manteniendo el resto del path
+				window.location.href = '/en' + currentPath;
 			}
 		} else {
 			// Navigate to Spanish version (default)
-			if (currentPath.startsWith(basePath + '/en/')) {
-				const pathAfterEn = currentPath.replace(basePath + '/en/', '/');
-				window.location.href = basePath + (pathAfterEn === '/' ? '/' : pathAfterEn);
-			} else if (currentPath === basePath + '/en') {
-				window.location.href = basePath + '/';
+			if (currentPath.startsWith('/en/')) {
+				const pathAfterEn = currentPath.replace('/en/', '/');
+				window.location.href = pathAfterEn === '/' ? '/' : pathAfterEn;
+			} else if (currentPath === '/en') {
+				window.location.href = '/';
 			} else {
 				// Already in Spanish, do nothing
 				return;
@@ -418,8 +416,7 @@ const t = useTranslations(lang);
 	if (languageSelect) {
 		// Set initial value based on current URL
 		const currentPath = window.location.pathname;
-		const basePath = '/portfolio';
-		const isEnglish = currentPath.startsWith(basePath + '/en');
+		const isEnglish = currentPath.startsWith('/en');
 		languageSelect.value = isEnglish ? 'en' : 'es';
 		
 		languageSelect.addEventListener('change', function(e) {
