@@ -10,7 +10,6 @@ export default defineConfig({
       prefixDefaultLocale: false
     }
   },
-  site: 'https://toniramos.github.io/portfolio/',
-  base: '/portfolio',
+  site: 'https://antonioramostorres.dev',
   output: 'static',
 });
