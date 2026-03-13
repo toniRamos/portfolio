@@ -4,8 +4,8 @@ import { getLangFromUrl, useTranslations } from '../../i18n/ui';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-// Image path - using string literal for public folder asset
-const profilePicture = '/portfolio/images/profile/profile-picture.jpg';
+// Image path - using string literal for public folder asset (raíz del dominio)
+const profilePicture = '/images/profile/profile-picture.jpg';
 ---
 
 <section id="about" class="about">
