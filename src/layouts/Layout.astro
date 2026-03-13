@@ -7,13 +7,16 @@ export interface Props {
 	description?: string;
 }
 
-const { title = siteConfig.title, description = siteConfig.description } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
+const defaultTitle = lang === 'en' ? siteConfig.titleEn : siteConfig.title;
+const defaultDescription = lang === 'en' ? siteConfig.descriptionEn : siteConfig.description;
+const { title = defaultTitle, description = defaultDescription } = Astro.props;
 const currentPath = Astro.url.pathname;
-const canonicalURL = lang === 'en' 
-	? `${siteConfig.url}/en/` 
+const canonicalURL = lang === 'en'
+	? `${siteConfig.url}/en/`
 	: `${siteConfig.url}/`;
 const ogImage = `${siteConfig.url}/images/profile/profile-picture.jpg`;
+const ogLocale = lang === 'en' ? 'en_US' : 'es_ES';
 ---
 
 <!doctype html>
@@ -36,6 +39,7 @@ const ogImage = `${siteConfig.url}/images/profile/profile-picture.jpg`;
 		
 		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
+		<meta property="og:locale" content={ogLocale} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={ogImage} />
