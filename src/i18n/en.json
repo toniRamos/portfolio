@@ -131,6 +131,16 @@
       "title": "Factorio-like Game",
       "description": "Factory-building game inspired by Factorio, built with Svelte and Vite. Complete resource production and transportation system featuring conveyor belts, automatic item generation, intelligent flow management with automatic balancing at junctions, maximum capacity of 3 items per cell, real-time visual feedback, and automatic saving. Tick-based simulation with smart pathfinding and pause/resume controls.",
       "tech": ["Svelte", "JavaScript", "Vite", "CSS3", "GitHub Pages", "localStorage"]
+    },
+    "infiniteDark": {
+      "title": "Infinite Dark: Space Survivor",
+      "description": "Android space-survival roguelite with escalating waves, weapon synergies, and permanent progression between runs.",
+      "tech": ["Android", "Roguelite", "Wave survival", "Google Play"]
+    },
+    "devApplications": {
+      "title": "DevApplications",
+      "description": "Website for my indie game studio DevApplications (Barcelona), showcasing games and sharing our no-paywall, no-energy design philosophy.",
+      "tech": ["Website", "Indie studio", "Branding"]
     }
   },
   "contact": {

@@ -9,6 +9,8 @@ const videoStoreScreenshot = "/images/projects/video-store-screenshot.png";
 const planningPokerScreenshot = "/images/projects/planning-poker.png";
 const chessScreenshot = "/images/projects/chess.png";
 const factorioLikeScreenshot = "/images/projects/factorio-like.png";
+const infiniteDarkLogo = "/images/projects/principal-logo-infinite-dark.png";
+const devApplicationsLogo = "/images/projects/logoDevApplications.png";
 ---
 
 <section id="projects" class="projects">
@@ -20,6 +22,56 @@ const factorioLikeScreenshot = "/images/projects/factorio-like.png";
 			</h2>
 		</div>
 		<div class="projects-grid">
+
+			<div class="project-card reveal-stagger">
+				<a href="https://devapplications.xyz/" target="_blank" rel="noopener noreferrer" class="project-image">
+					<img
+						src={devApplicationsLogo}
+						alt={t('projects.devApplications.title')}
+					/>
+				</a>
+				<div class="project-content">
+					<p class="project-overline">{t('projects.personal')}</p>
+					<h3 class="project-title">
+						<a href="https://devapplications.xyz/" target="_blank" rel="noopener noreferrer">
+							{t('projects.devApplications.title')}
+						</a>
+					</h3>
+					<div class="project-description">
+						<p>{t('projects.devApplications.description')}</p>
+					</div>
+					<div class="project-technologies">
+						{t('projects.devApplications.tech').map((tech, index) => (
+							<span class="tech-tag" key={index}>{tech}</span>
+						))}
+					</div>
+				</div>
+			</div>
+
+			<div class="project-card reveal-stagger">
+				<a href="https://play.google.com/store/apps/details?id=com.devapplications.infiniteDark" target="_blank" rel="noopener noreferrer" class="project-image">
+					<img
+						src={infiniteDarkLogo}
+						alt={t('projects.infiniteDark.title')}
+					/>
+				</a>
+				<div class="project-content">
+					<p class="project-overline">{t('projects.personal')}</p>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/details?id=com.devapplications.infiniteDark" target="_blank" rel="noopener noreferrer">
+							{t('projects.infiniteDark.title')}
+						</a>
+					</h3>
+					<div class="project-description">
+						<p>{t('projects.infiniteDark.description')}</p>
+					</div>
+					<div class="project-technologies">
+						{t('projects.infiniteDark.tech').map((tech, index) => (
+							<span class="tech-tag" key={index}>{tech}</span>
+						))}
+					</div>
+				</div>
+			</div>
 
 			<div class="project-card reveal-stagger">
 				<a href="https://toniramos.github.io/factorio-like/" target="_blank" rel="noopener noreferrer" class="project-image">
