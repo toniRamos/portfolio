@@ -29,6 +29,9 @@ const ogLocale = lang === 'en' ? 'en_US' : 'es_ES';
 		<!-- SEO -->
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		<meta name="author" content={siteConfig.name} />
+		<meta name="robots" content="index, follow" />
+		<meta name="theme-color" content="#0f172a" />
 		<meta name="generator" content={Astro.generator} />
 		
 		<!-- Canonical + hreflang -->
@@ -40,9 +43,12 @@ const ogLocale = lang === 'en' ? 'en_US' : 'es_ES';
 		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" content={ogLocale} />
+		<meta property="og:locale:alternate" content={lang === 'en' ? 'es_ES' : 'en_US'} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={ogImage} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
 		<meta property="og:url" content={canonicalURL} />
 		<meta property="og:site_name" content={siteConfig.name} />
 		
@@ -58,48 +64,51 @@ const ogLocale = lang === 'en' ? 'en_US' : 'es_ES';
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 		
 		<!-- Scripts -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
 		
 		<!-- Schema.org JSON-LD -->
 		<script type="application/ld+json" set:html={JSON.stringify({
 			"@context": "https://schema.org",
-			"@type": "Person",
-			"name": siteConfig.name,
-			"jobTitle": "Software Architect",
-			"description": siteConfig.description,
-			"url": siteConfig.url,
-			"image": `${siteConfig.url}/images/profile/profile-picture.jpg`,
-			"email": siteConfig.email,
-			"address": {
-				"@type": "PostalAddress",
-				"addressLocality": "Barcelona",
-				"addressRegion": "Catalonia",
-				"addressCountry": "ES"
-			},
-			"worksFor": {
-				"@type": "Organization",
-				"name": "Vibia"
-			},
-			"knowsAbout": [
-				"Software Architecture",
-				"Domain-Driven Design",
-				"Hexagonal Architecture",
-				"Clean Architecture",
-				"Node.js",
-				"React",
-				"TypeScript",
-				"JavaScript",
-				"PHP",
-				"Symfony",
-				"Microservices",
-				"CQRS",
-				"Docker",
-				"CI/CD"
-			],
-			"sameAs": [
-				siteConfig.social.github,
-				siteConfig.social.linkedin
-			]
+			"@type": "ProfilePage",
+			"mainEntity": {
+				"@type": "Person",
+				"name": siteConfig.name,
+				"jobTitle": lang === 'en' ? "Software Architect" : "Arquitecto de Software",
+				"description": lang === 'en' ? siteConfig.descriptionEn : siteConfig.description,
+				"url": siteConfig.url,
+				"image": `${siteConfig.url}/images/profile/profile-picture.jpg`,
+				"email": siteConfig.email,
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Barcelona",
+					"addressRegion": "Catalonia",
+					"addressCountry": "ES"
+				},
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Vibia"
+				},
+				"knowsAbout": [
+					"Software Architecture",
+					"Domain-Driven Design",
+					"Hexagonal Architecture",
+					"Clean Architecture",
+					"Node.js",
+					"React",
+					"TypeScript",
+					"JavaScript",
+					"PHP",
+					"Symfony",
+					"Microservices",
+					"CQRS",
+					"Docker",
+					"CI/CD"
+				],
+				"sameAs": [
+					siteConfig.social.github,
+					siteConfig.social.linkedin
+				]
+			}
 		})} />
 	</head>
 	<body>
