@@ -11,6 +11,7 @@ const chessScreenshot = "/images/projects/chess.png";
 const factorioLikeScreenshot = "/images/projects/factorio-like.png";
 const infiniteDarkLogo = "/images/projects/principal-logo-infinite-dark.png";
 const devApplicationsLogo = "/images/projects/logoDevApplications.png";
+const arkanoidClassicLogo = "/images/projects/arkanoid-classic.png";
 ---
 
 <section id="projects" class="projects">
@@ -22,6 +23,44 @@ const devApplicationsLogo = "/images/projects/logoDevApplications.png";
 			</h2>
 		</div>
 		<div class="projects-grid">
+
+			<div class="project-card reveal-stagger">
+				<a href="https://play.google.com/store/apps/details?id=com.devApplications.Arkanoidclasicfree" target="_blank" rel="noopener noreferrer" class="project-image">
+					<img
+						src={arkanoidClassicLogo}
+						alt={t('projects.arkanoidClassic.title')}
+						loading="lazy"
+					/>
+				</a>
+				<div class="project-content">
+					<p class="project-overline">{t('projects.featured')}</p>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/details?id=com.devApplications.Arkanoidclasicfree" target="_blank" rel="noopener noreferrer">
+							{t('projects.arkanoidClassic.title')}
+						</a>
+					</h3>
+					<div class="project-description">
+						<p>{t('projects.arkanoidClassic.description')}</p>
+					</div>
+					<div class="project-technologies">
+						{t('projects.arkanoidClassic.tech').map((tech, index) => (
+							<span class="tech-tag" key={index}>{tech}</span>
+						))}
+					</div>
+					<div class="project-links">
+						<a href="https://play.google.com/store/apps/details?id=com.devApplications.Arkanoidclasicfree" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Abrir Arkanoid Clásico en Google Play">
+							<img
+								src="/images/icons/google-play-badge-logo.svg"
+								alt="Google Play"
+								class="google-play-badge"
+								width="22"
+								height="22"
+								loading="lazy"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
 
 			<div class="project-card reveal-stagger">
 				<a href="https://devapplications.xyz/" target="_blank" rel="noopener noreferrer" class="project-image">

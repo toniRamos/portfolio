@@ -132,6 +132,11 @@
       "description": "Factory-building game inspired by Factorio, built with Svelte and Vite. Complete resource production and transportation system featuring conveyor belts, automatic item generation, intelligent flow management with automatic balancing at junctions, maximum capacity of 3 items per cell, real-time visual feedback, and automatic saving. Tick-based simulation with smart pathfinding and pause/resume controls.",
       "tech": ["Svelte", "JavaScript", "Vite", "CSS3", "GitHub Pages", "localStorage"]
     },
+    "arkanoidClassic": {
+      "title": "Arkanoid Classic",
+      "description": "The classic brick-breaking game reimagined for Android. With over 500,000 downloads and a 4.3-star rating (2.38K reviews), it's the most downloaded Arkanoid on Google Play. Features multiple levels, power-ups, and optimized touch controls.",
+      "tech": ["Android", "Arcade", "Google Play", "500K+ downloads"]
+    },
     "infiniteDark": {
       "title": "Infinite Dark: Space Survivor",
       "description": "Android space-survival roguelite with escalating waves, weapon synergies, and permanent progression between runs.",
