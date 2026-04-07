@@ -134,7 +134,7 @@
     },
     "arkanoidClassic": {
       "title": "Arkanoid Classic",
-      "description": "The classic brick-breaking game reimagined for Android. With over 500,000 downloads and a 4.3-star rating (2.38K reviews), it's the most downloaded Arkanoid on Google Play. Features multiple levels, power-ups, and optimized touch controls.",
+      "description": "The classic brick-breaking game reimagined for Android. With over 500,000 downloads and a 4.3-star rating (2.38K reviews), it's one of the most downloaded Arkanoid games on Google Play. Features multiple levels, power-ups, and optimized touch controls.",
       "tech": ["Android", "Arcade", "Google Play", "500K+ downloads"]
     },
     "infiniteDark": {
