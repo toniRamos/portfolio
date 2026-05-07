@@ -137,6 +137,11 @@
       "description": "The classic brick-breaking game reimagined for Android. With over 500,000 downloads and a 4.3-star rating (2.38K reviews), it's one of the most downloaded Arkanoid games on Google Play. Features multiple levels, power-ups, and optimized touch controls.",
       "tech": ["Android", "Arcade", "Google Play", "500K+ downloads"]
     },
+    "idleBackpackSurvivor": {
+      "title": "Idle Backpack Survivor: RPG",
+      "description": "Idle RPG where you organize your backpack with weapons and items to survive escalating waves of enemies. Mixes Tetris-style inventory management with incremental progression and roguelite mechanics.",
+      "tech": ["Android", "Idle RPG", "Roguelite", "Google Play"]
+    },
     "infiniteDark": {
       "title": "Infinite Dark: Space Survivor",
       "description": "Android space-survival roguelite with escalating waves, weapon synergies, and permanent progression between runs.",

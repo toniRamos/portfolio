@@ -137,6 +137,11 @@
       "description": "El clásico juego de romper ladrillos reimaginado para Android. Con más de 500.000 descargas y una puntuación de 4,3 estrellas (2,38 mil reseñas), es uno de los Arkanoid más descargados de Google Play. Incluye múltiples niveles, power-ups y controles táctiles optimizados.",
       "tech": ["Android", "Arcade", "Google Play", "500K+ descargas"]
     },
+    "idleBackpackSurvivor": {
+      "title": "Idle Backpack Survivor: RPG",
+      "description": "RPG idle donde organizas tu mochila con armas y objetos para sobrevivir oleadas de enemigos. Combina gestión de inventario tipo Tetris con progresión incremental y mecánicas roguelite.",
+      "tech": ["Android", "Idle RPG", "Roguelite", "Google Play"]
+    },
     "infiniteDark": {
       "title": "Infinite Dark: Space Survivor",
       "description": "Roguelite de supervivencia espacial para Android con oleadas crecientes, sinergias entre armas y progresión permanente entre runs.",
