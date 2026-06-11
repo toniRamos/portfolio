@@ -132,6 +132,16 @@
       "description": "Factory-building game inspired by Factorio, built with Svelte and Vite. Complete resource production and transportation system featuring conveyor belts, automatic item generation, intelligent flow management with automatic balancing at junctions, maximum capacity of 3 items per cell, real-time visual feedback, and automatic saving. Tick-based simulation with smart pathfinding and pause/resume controls.",
       "tech": ["Svelte", "JavaScript", "Vite", "CSS3", "GitHub Pages", "localStorage"]
     },
+    "x2NumberMerge": {
+      "title": "X2 Number Merge",
+      "description": "Number merge puzzle where you combine matching tiles to multiply their value and beat bosses. Quick drag-and-drop matches, fully playable offline — no Wi-Fi needed.",
+      "tech": ["Android", "Puzzle", "Casual", "Google Play"]
+    },
+    "geometrySmash": {
+      "title": "Geometry Smash",
+      "description": "Physics-based roguelite where you drop balls to smash bricks, bubble-shooter style. Chain bounces, pick upgrades between rounds and survive increasingly tough waves.",
+      "tech": ["Android", "Roguelite", "Arcade", "Google Play"]
+    },
     "arkanoidClassic": {
       "title": "Arkanoid Classic",
       "description": "The classic brick-breaking game reimagined for Android. With over 500,000 downloads and a 4.3-star rating (2.38K reviews), it's one of the most downloaded Arkanoid games on Google Play. Features multiple levels, power-ups, and optimized touch controls.",

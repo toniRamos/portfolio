@@ -13,6 +13,8 @@ const infiniteDarkLogo = "/images/projects/principal-logo-infinite-dark.png";
 const devApplicationsLogo = "/images/projects/logoDevApplications.png";
 const arkanoidClassicLogo = "/images/projects/arkanoid-classic.png";
 const idleBackpackSurvivorLogo = "/images/projects/idle-backpack-survivor.png";
+const x2NumberMergeLogo = "/images/projects/x2-number-merge.png";
+const geometrySmashLogo = "/images/projects/geometry-smash.png";
 ---
 
 <section id="projects" class="projects">
@@ -24,6 +26,82 @@ const idleBackpackSurvivorLogo = "/images/projects/idle-backpack-survivor.png";
 			</h2>
 		</div>
 		<div class="projects-grid">
+
+			<div class="project-card reveal-stagger">
+				<a href="https://play.google.com/store/apps/details?id=com.devApplications.xtwonumbermerge" target="_blank" rel="noopener noreferrer" class="project-image">
+					<img
+						src={x2NumberMergeLogo}
+						alt={t('projects.x2NumberMerge.title')}
+						loading="lazy"
+					/>
+				</a>
+				<div class="project-content">
+					<p class="project-overline">{t('projects.personal')}</p>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/details?id=com.devApplications.xtwonumbermerge" target="_blank" rel="noopener noreferrer">
+							{t('projects.x2NumberMerge.title')}
+						</a>
+					</h3>
+					<div class="project-description">
+						<p>{t('projects.x2NumberMerge.description')}</p>
+					</div>
+					<div class="project-technologies">
+						{t('projects.x2NumberMerge.tech').map((tech, index) => (
+							<span class="tech-tag" key={index}>{tech}</span>
+						))}
+					</div>
+					<div class="project-links">
+						<a href="https://play.google.com/store/apps/details?id=com.devApplications.xtwonumbermerge" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Abrir X2 Number Merge en Google Play">
+							<img
+								src="/images/icons/google-play-badge-logo.svg"
+								alt="Google Play"
+								class="google-play-badge"
+								width="22"
+								height="22"
+								loading="lazy"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-card reveal-stagger">
+				<a href="https://play.google.com/store/apps/details?id=com.DevApplications.GeometrySmash" target="_blank" rel="noopener noreferrer" class="project-image">
+					<img
+						src={geometrySmashLogo}
+						alt={t('projects.geometrySmash.title')}
+						loading="lazy"
+					/>
+				</a>
+				<div class="project-content">
+					<p class="project-overline">{t('projects.personal')}</p>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/details?id=com.DevApplications.GeometrySmash" target="_blank" rel="noopener noreferrer">
+							{t('projects.geometrySmash.title')}
+						</a>
+					</h3>
+					<div class="project-description">
+						<p>{t('projects.geometrySmash.description')}</p>
+					</div>
+					<div class="project-technologies">
+						{t('projects.geometrySmash.tech').map((tech, index) => (
+							<span class="tech-tag" key={index}>{tech}</span>
+						))}
+					</div>
+					<div class="project-links">
+						<a href="https://play.google.com/store/apps/details?id=com.DevApplications.GeometrySmash" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Abrir Geometry Smash en Google Play">
+							<img
+								src="/images/icons/google-play-badge-logo.svg"
+								alt="Google Play"
+								class="google-play-badge"
+								width="22"
+								height="22"
+								loading="lazy"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
 
 			<div class="project-card reveal-stagger">
 				<a href="https://play.google.com/store/apps/details?id=com.devApplications.IdleBackpackSurvivor" target="_blank" rel="noopener noreferrer" class="project-image">
