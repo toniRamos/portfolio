@@ -15,6 +15,8 @@ const arkanoidClassicLogo = "/images/projects/arkanoid-classic.png";
 const idleBackpackSurvivorLogo = "/images/projects/idle-backpack-survivor.png";
 const x2NumberMergeLogo = "/images/projects/x2-number-merge.png";
 const geometrySmashLogo = "/images/projects/geometry-smash.png";
+const bulletHellStarhailLogo = "/images/projects/bullet-hell-starhail.png";
+const idleBrickBreakerLogo = "/images/projects/idle-brick-breaker.png";
 ---
 
 <section id="projects" class="projects">
@@ -26,6 +28,82 @@ const geometrySmashLogo = "/images/projects/geometry-smash.png";
 			</h2>
 		</div>
 		<div class="projects-grid">
+
+			<div class="project-card reveal-stagger">
+				<a href="https://play.google.com/store/apps/details?id=com.devApplications.starhail" target="_blank" rel="noopener noreferrer" class="project-image">
+					<img
+						src={bulletHellStarhailLogo}
+						alt={t('projects.bulletHellStarhail.title')}
+						loading="lazy"
+					/>
+				</a>
+				<div class="project-content">
+					<p class="project-overline">{t('projects.personal')}</p>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/details?id=com.devApplications.starhail" target="_blank" rel="noopener noreferrer">
+							{t('projects.bulletHellStarhail.title')}
+						</a>
+					</h3>
+					<div class="project-description">
+						<p>{t('projects.bulletHellStarhail.description')}</p>
+					</div>
+					<div class="project-technologies">
+						{t('projects.bulletHellStarhail.tech').map((tech, index) => (
+							<span class="tech-tag" key={index}>{tech}</span>
+						))}
+					</div>
+					<div class="project-links">
+						<a href="https://play.google.com/store/apps/details?id=com.devApplications.starhail" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Abrir Bullet Hell: Starhail en Google Play">
+							<img
+								src="/images/icons/google-play-badge-logo.svg"
+								alt="Google Play"
+								class="google-play-badge"
+								width="22"
+								height="22"
+								loading="lazy"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-card reveal-stagger">
+				<a href="https://play.google.com/store/apps/details?id=com.devapplications.idlebrickbreaker" target="_blank" rel="noopener noreferrer" class="project-image">
+					<img
+						src={idleBrickBreakerLogo}
+						alt={t('projects.idleBrickBreaker.title')}
+						loading="lazy"
+					/>
+				</a>
+				<div class="project-content">
+					<p class="project-overline">{t('projects.personal')}</p>
+					<h3 class="project-title">
+						<a href="https://play.google.com/store/apps/details?id=com.devapplications.idlebrickbreaker" target="_blank" rel="noopener noreferrer">
+							{t('projects.idleBrickBreaker.title')}
+						</a>
+					</h3>
+					<div class="project-description">
+						<p>{t('projects.idleBrickBreaker.description')}</p>
+					</div>
+					<div class="project-technologies">
+						{t('projects.idleBrickBreaker.tech').map((tech, index) => (
+							<span class="tech-tag" key={index}>{tech}</span>
+						))}
+					</div>
+					<div class="project-links">
+						<a href="https://play.google.com/store/apps/details?id=com.devapplications.idlebrickbreaker" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Abrir Idle Brick Breaker en Google Play">
+							<img
+								src="/images/icons/google-play-badge-logo.svg"
+								alt="Google Play"
+								class="google-play-badge"
+								width="22"
+								height="22"
+								loading="lazy"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
 
 			<div class="project-card reveal-stagger">
 				<a href="https://play.google.com/store/apps/details?id=com.devApplications.xtwonumbermerge" target="_blank" rel="noopener noreferrer" class="project-image">

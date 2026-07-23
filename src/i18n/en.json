@@ -132,6 +132,16 @@
       "description": "Factory-building game inspired by Factorio, built with Svelte and Vite. Complete resource production and transportation system featuring conveyor belts, automatic item generation, intelligent flow management with automatic balancing at junctions, maximum capacity of 3 items per cell, real-time visual feedback, and automatic saving. Tick-based simulation with smart pathfinding and pause/resume controls.",
       "tech": ["Svelte", "JavaScript", "Vite", "CSS3", "GitHub Pages", "localStorage"]
     },
+    "bulletHellStarhail": {
+      "title": "Bullet Hell: Starhail",
+      "description": "Fast neon bullet-hell space shooter built for one hand. Weave through storms of enemy fire with a tiny hitbox, unlock 9 unique ships, take down 6 epic bosses and chain combos through endless escalating waves.",
+      "tech": ["Android", "Shoot 'em up", "Arcade", "Google Play"]
+    },
+    "idleBrickBreaker": {
+      "title": "Idle Brick Breaker",
+      "description": "Brick breaker reborn as an idle game: balls auto-launch, smash numbered bricks and rack up gold on their own. Merge balls into higher tiers, climb 4 layers of progression with Prestige and Singularity resets, and keep earning offline.",
+      "tech": ["Android", "Idle", "Incremental", "Google Play"]
+    },
     "x2NumberMerge": {
       "title": "X2 Number Merge",
       "description": "Number merge puzzle where you combine matching tiles to multiply their value and beat bosses. Quick drag-and-drop matches, fully playable offline — no Wi-Fi needed.",
